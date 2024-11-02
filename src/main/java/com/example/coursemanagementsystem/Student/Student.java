@@ -8,16 +8,18 @@ public class Student {
     private String surname;
     private LocalDate dob;
     private String email;
+    private String group;
 
     public Student() {
     }
 
-    public Student(Long id, String name, String surname, LocalDate dob, String email) {
+    public Student(Long id, String name, String surname, LocalDate dob, String email, String group) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.dob = dob;
         this.email = email;
+        this.group = group;
     }
 
     public Long getId() {
@@ -60,6 +62,14 @@ public class Student {
         this.email = email;
     }
 
+    public String getGroup() {
+        return group;
+    }
+
+    public void setGroup(String group) {
+        this.group = group;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -68,6 +78,7 @@ public class Student {
                 ", surname='" + surname + '\'' +
                 ", dob=" + dob +
                 ", email='" + email + '\'' +
+                ", group=" + group +
                 '}';
     }
 }

@@ -12,12 +12,13 @@
         <nav>
             <ul>
                 <li><a href="main-page.html">Main</a></li>
-                <li><a href="/courses">My Courses</a></li>
-                <li><a href="/profile">Profile</a></li>
+                <li><a th:href="@{/course-detail-student}">My Courses</a></li>
+                <li><a th:href="@{/student-profile}">Profile</a></li>
                 <li><a href="/logout">Log out</a></li>
             </ul>
         </nav>
     </header>
+
 
     <section class="courses-section">
         <h2>Your Courses</h2>

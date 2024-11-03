@@ -1,17 +1,15 @@
 package com.example.coursemanagementsystem.entities;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-
+import jakarta.persistence.*;
 import java.util.List;
 
+@Entity
 public class Group {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    @OneToMany(mappedBy = "group_id")
+
+    @OneToMany(mappedBy = "group")
     private List<User> students;
 }

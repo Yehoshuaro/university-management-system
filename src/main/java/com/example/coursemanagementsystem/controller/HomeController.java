@@ -9,7 +9,7 @@ public class HomeController {
 
     @GetMapping("/home")
     public String home(Model model) {
-        model.addAttribute("message", "Добро пожаловать на главную страницу!");
+        model.addAttribute("message", "Welcome to the Moodle!");
         return "main-page";
     }
 }

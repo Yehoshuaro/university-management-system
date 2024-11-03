@@ -11,15 +11,15 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = "courses")
-public class Course {
+@Table(name = "groups")
+public class Group {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String title;
+    private String name;
     private String description;
-    private Integer credits;
+    private Integer year;
 
-    @ManyToMany(mappedBy = "courses")
+    @OneToMany(mappedBy = "group")
     private List<User> students;
 }

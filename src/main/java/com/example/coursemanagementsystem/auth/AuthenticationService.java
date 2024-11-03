@@ -4,7 +4,7 @@ package com.example.coursemanagementsystem.auth;
 import com.example.coursemanagementsystem.config.JwtService;
 import com.example.coursemanagementsystem.entities.Role;
 import com.example.coursemanagementsystem.entities.User;
-import com.example.coursemanagementsystem.repo.UserRepository;
+import com.example.coursemanagementsystem.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

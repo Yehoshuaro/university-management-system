@@ -30,8 +30,8 @@ public class HomeController {
     @GetMapping("/teacher-main-page")
     public String teacherMainPage(Model model) {
         model.addAttribute("assignments", List.of(
-                new Assignment("Project 1", "2024-12-15"),
-                new Assignment("Assignment 2", "2024-11-20")
+//                new Assignment("Project 1", "2024-12-15"),
+//                new Assignment("Assignment 2", "2024-11-20")
         ));
         return "teacher-main-page";
     }

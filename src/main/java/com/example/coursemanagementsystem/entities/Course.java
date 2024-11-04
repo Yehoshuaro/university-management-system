@@ -1,25 +1,27 @@
 package com.example.coursemanagementsystem.entities;
 
-import jakarta.persistence.*;
-import lombok.*;
+import jakarta.persistence.*; // JPA annotations for entity management
+import lombok.*; // Lombok annotations for boilerplate code generation
 
-import java.util.List;
+import java.util.List; // List interface for collections
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
-@Entity
-@Table(name = "courses")
+@Getter // Lombok annotation to generate getter methods
+@Setter // Lombok annotation to generate setter methods
+@NoArgsConstructor // Lombok annotation to generate a no-argument constructor
+@AllArgsConstructor // Lombok annotation to generate a constructor with all fields
+@Builder // Lombok annotation to support the builder pattern
+@Entity // Indicates that this class is a JPA entity
+@Table(name = "courses") // Specifies the table name in the database
 public class Course {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String title;
-    private String description;
-    private Integer credits;
 
-    @ManyToMany(mappedBy = "courses")
-    private List<User> students;
+    @Id // Indicates the primary key of the entity
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-generates the primary key value
+    private Long id; // Unique identifier for the course
+
+    private String title; // Title of the course
+    private String description; // Description of the course
+    private Integer credits; // Number of credits for the course
+
+    @ManyToMany(mappedBy = "courses") // Defines a many-to-many relationship with the User entity
+    private List<User> students; // List of students enrolled in the course
 }

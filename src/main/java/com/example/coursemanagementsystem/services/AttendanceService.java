@@ -20,7 +20,6 @@ public class AttendanceService implements AttendanceServiceInterface {
     private UserRepository userRepository;
     @Autowired
     private CourseRepository courseRepository;
-
     @Override
     public Attendance markAttendance(Integer student_id, Long courseId, boolean attended) {
         User student = userRepository.findById(student_id)
@@ -30,7 +29,7 @@ public class AttendanceService implements AttendanceServiceInterface {
         Attendance attendance = Attendance.builder()
                 .student(student)
                 .course(course)
-                .date(LocalDate.now())
+                .timestamp(LocalDate.now())
                 .attended(attended)
                 .build();
 

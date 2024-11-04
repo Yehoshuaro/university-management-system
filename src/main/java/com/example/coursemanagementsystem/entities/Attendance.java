@@ -24,6 +24,6 @@ public class Attendance {
     @ManyToOne
     @JoinColumn(name = "course_id")
     private Course course;
-    private LocalDate date;
+    private LocalDate timestamp;
     private boolean attended;
 }

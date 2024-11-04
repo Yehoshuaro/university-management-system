@@ -1,5 +1,5 @@
 package com.example.coursemanagementsystem.controller;
-import com.example.coursemanagementsystem.teacher.Assignment;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -44,8 +44,9 @@ public class HomeController {
         model.addAttribute("assignments");
         return "deadlines";
     }
-    @GetMapping("/sign-in")
+    @GetMapping("/auth/authenticate")
     public String signInPage(Model model) {
         return "sign-in";
     }
+
 }

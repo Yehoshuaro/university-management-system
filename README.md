@@ -1,3 +1,21 @@
-University Management System is a web application designed to manage university data, providing an interface for both students and teachers. The application allows students to view information about their groups, courses, and teachers, while teachers can manage groups and see lists of students in each group
+## University Management System
+#### Overview
+University Management System is a web application designed to streamline university operations, offering separate interfaces for students and teachers.
+The system provides features for
+Students: Viewing information about their groups, courses, and teachers
+Teachers: Managing groups
+Viewing and editing lists of students in each group
+This project was developed using Java Spring Framework as part of the end-term defense for the Software Development Process (SDP) course at Astana IT University
 
-This project was prepared for the end-term defense in the subject of SDP at Astana IT University
+#### Features
+User authentication and authorization using JWT (JSON Web Tokens)
+Separate dashboards for students and teachers
+Easy group and student management functionalities for teachers
+Clean and user-friendly interface
+Backend developed with Java Spring Framework for robust and scalable performance
+
+#### Technologies Use
+Backend: Java, Spring Framework (Spring Boot, Spring Security, Spring Data JPA)
+Frontend: HTML, CSS
+Database: PostgreSQL
+Authentication: JWT

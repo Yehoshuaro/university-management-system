@@ -8,7 +8,7 @@ Viewing information about their groups, courses, and teachers.
 Teachers:
 Managing groups.
 Viewing and editing lists of students in each group.
-This project was developed using Java Spring Framework as part of the end-term defense for the Software Development Process (SDP) course at Astana IT University
+This project was developed using Java Spring Framework as part of the End-term defense for the Software Design Patterns (SDP) course at Astana IT University
 
 #### Features
 User authentication and authorization using JWT (JSON Web Tokens)
